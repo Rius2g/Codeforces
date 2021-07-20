@@ -1,3 +1,6 @@
+import bisect as bis
+
+
 n = int(input())
 
 shops = list(map(int, input().split()))
@@ -9,9 +12,9 @@ while q:
     x = int(input())
     count = 0
     for s in shops:
-        if x  >= s:
+        if s <= x:
             count += 1
         else:
-            break
+            break 
     print(count)
     q -= 1
