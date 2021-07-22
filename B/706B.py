@@ -1,6 +1,3 @@
-import bisect as bis
-
-
 n = int(input())
 
 shops = list(map(int, input().split()))
